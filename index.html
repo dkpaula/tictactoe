@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple, interactive Tic Tac Toe game built with HTML, CSS, and JavaScript. Play against a friend in this classic two-player game.">
+    <meta name="keywords" content="tic tac toe, game, javascript, html, css, two player, interactive">
+    <meta name="author" content="Kevin G. Vega">
+    <meta property="og:title" content="Tic Tac Toe Game">
+    <meta property="og:description" content="Play this classic Tic Tac Toe game with a friend. Simple, clean, and fun!">
+    <meta property="og:type" content="website">
+    <title>Tic Tac Toe - Interactive Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dan's Tic Tac Toe</h1>
+        <div id="status">Player X's turn</div>
+        <div class="board" id="board">
+            <div class="cell" data-cell="0"></div>
+            <div class="cell" data-cell="1"></div>
+            <div class="cell" data-cell="2"></div>
+            <div class="cell" data-cell="3"></div>
+            <div class="cell" data-cell="4"></div>
+            <div class="cell" data-cell="5"></div>
+            <div class="cell" data-cell="6"></div>
+            <div class="cell" data-cell="7"></div>
+            <div class="cell" data-cell="8"></div>
+        </div>
+        <button id="restartButton">Restart Game</button>
+        <div class="score-board">
+            <h2>Score</h2>
+            <div class="scores">
+                <div class="score">
+                    <span class="player">Player X:</span>
+                    <span id="scoreX">0</span>
+                </div>
+                <div class="score">
+                    <span class="player">Player O:</span>
+                    <span id="scoreO">0</span>
+                </div>
+                <div class="score">
+                    <span class="player">Draws:</span>
+                    <span id="scoreDraw">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
